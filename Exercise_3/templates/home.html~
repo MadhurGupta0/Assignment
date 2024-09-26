@@ -1,0 +1,18 @@
+{%extends 'base.html' %}
+{% load static %}
+{%block title%}
+Exercise_3
+{% endblock %}
+
+{%block content%}
+<div class="container mx-auto flex items-center flex-wrap pb-12 z-30">
+            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Welcome to the Home Web Page</h1>
+    <br>
+    <div class="w-full my-2 text-xl font-bold leading-tight text-center text-gray-800">
+        <div class="inline">Current Date and Time:</div>
+        <div id="date" class="inline"></div>
+        <div id="clock" class="inline" > </div>
+    </div>
+    <p class="w-full my-2 text-xl font-bold leading-tight text-center text-gray-800">Random Quote of the Day: "{{ random_quote }}"</p>
+</div>
+{%endblock%}

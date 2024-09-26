@@ -1,0 +1,7 @@
+from django.shortcuts import render
+
+
+
+def index(request):
+    text="This is this base for further use."
+    return render(request, 'base.html',{"text":text})
